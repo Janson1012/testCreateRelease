@@ -20,15 +20,6 @@ jobs:
         with:
           version: 6
 
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Build
-        run: pnpm build
-
-      - name: Test
-        run: pnpm test
-
       - name: Create Release for Tag
         id: release_tag
         uses: yyx990803/release-tag@master
