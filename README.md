@@ -1,4 +1,4 @@
 # testCreateRelease
 test some of github actions
 
-! It must set token because of need authority
+! It must set npm token because of need authority to publish
