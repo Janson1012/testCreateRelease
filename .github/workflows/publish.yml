@@ -29,8 +29,8 @@ jobs:
           tag_name: ${{ github.ref }}
           body: |-
             ${{github.event.head_commit.message}} 
-            by committer.name [**@${{github.event.head_commit.committer.name}}**](https://github.com/${{github.event.head_commit.committer.name}})
-            author.name ${{ github.event.head_commit.author.name}}
+            by committer.name **[@${{github.event.head_commit.committer.name}}]**(https://github.com/${{github.event.head_commit.committer.name}})
+# author.name ${{ github.event.head_commit.author.name}}
       - name: Publish to npm registry
         run: |
           npm publish --access public
